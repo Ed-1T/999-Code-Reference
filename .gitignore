@@ -348,3 +348,25 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 .ionide/
+/include/nitro
+/include/nitro_wl/common
+/include/IntellisenseClang.h
+/include/nitro.h
+/include/nitro_sp.h
+/source/print.s
+/source/main.cpp
+/source/debug_enable.s
+/replaces.x
+/newcode.sym
+/newcode.elf
+/newcode.bin
+/linker.x
+/kanji_s.dat
+/include/print.h
+/include/nitro_win32.h
+/bgm_opening_long.sad
+/ASMPatcher.vcxproj.filters
+/ASMPatcher.vcxproj
+/ASMPatcher.sln
+/arenaoffs.txt
+/999.nds
