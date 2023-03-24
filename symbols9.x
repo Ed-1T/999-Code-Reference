@@ -13,6 +13,21 @@
 /* arm9 */
 
 /*----------------------------------------------------------------*/
+/*------------------------ Core - Input --------------------------*/
+/*----------------------------------------------------------------*/
+
+_ZN4Core12initTouchPadEv				= 0x0200205C; /* Core::initTouchPad()              */
+_ZN4Core8readKeysERt					= 0x020020B4; /* Core::readKeys(unsigned short&)   */
+_ZN4Core12readTouchPadER12TouchPadData	= 0x02002148; /* Core::readTouchPad(TouchPadData&) */
+
+_ZN4Core19touchPadInitializedE			= 0x020B03F0; /* Core::touchPadInitialized */
+_ZN4Core18touchPadCalibratedE			= 0x020B03F1; /* Core::touchPadCalibrated  */
+_ZN4Core12touchPadDataE					= 0x020B03F2; /* Core::touchPadData        */
+_ZN4Core5inputE							= 0x020D65C4; /* Core::input               */
+_ZN4Core10fetchInputE					= 0x020AB4C0; /* Core::fetchInput          */
+
+
+/*----------------------------------------------------------------*/
 /*---------------------------- IPad ------------------------------*/
 /*----------------------------------------------------------------*/
 

@@ -3,7 +3,10 @@
 #include "nitro_if.hpp"
 
 // Defines a static string for the class type name
-#define ZE_CLASS(type) static const char[] typeName
+#define ZE_CLASS(type) public: static const char typeName[sizeof(#type)]
+
+// Obtains the type name of a class
+#define ZE_CLASS_NAME(type) ::type::##typeName
 
 // Defines functions for instance creation and destruction
 #define ZE_CLASS_INSTANCE(type)								\

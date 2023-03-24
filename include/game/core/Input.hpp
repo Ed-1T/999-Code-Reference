@@ -64,13 +64,11 @@ namespace Core {
 	extern bool touchPadCalibrated;
 	extern TPData touchPadData;
 	extern InputData input;
-	extern bool fetchKeys;
+	extern bool fetchInput;
 
 
 	void initTouchPad();
-
 	void readKeys(u16& keys);
-
 	void readTouchPad(TouchPadData& tp);
 
 }
