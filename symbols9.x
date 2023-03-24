@@ -10,6 +10,20 @@
 /* _ZxxxCyyy : constructor					*/
 /********************************************/
 
+
+
+/* temporary */
+
+init_memory				= 0x0200f5dc;
+
+file_init				= 0x01ff8144;
+file_open				= 0x01ff8164;
+file_close				= 0x02001590;
+file_get_size			= 0x01ff81d0;
+file_read_all			= 0x02001554;
+
+
+
 /* IPad */
 
 _ZTS4IPad								= 0x20ab798;	/* typeinfo name for IPad						*/
@@ -309,7 +323,7 @@ OS_SpinWait = 0x0207ED28;
 OS_WaitVBlankIntr = 0x0207ED34;
 OS_InitReset = 0x0207ED50;
 OSi_InitVramExclusive = 0x0207EE80;
-OS_Panic = 0x0207EF3C;
+OS_Terminate = 0x0207EF3C;
 OS_Halt = 0x0207EF4C;
 MI_SetWramBank = 0x0207EF58;
 MI_DmaFill32 = 0x0207EF68;
@@ -577,7 +591,6 @@ exit = 0x02087870;
 __exit = 0x020878B4;
 nan = 0x020879D0;
 __sys_free = 0x020879E8;
-free = 0x02087A00;
 __flush_all = 0x02087A14;
 abs = 0x02087A78;
 __convert_from_newlines = 0x02087A84;
@@ -725,8 +738,6 @@ std__duhandler = 0x02095038;
 std__terminate = 0x02095044;
 __register_global_object = 0x0209505C;
 __throw_catch_compare = 0x0209507C;
-_ZNdlE = 0x02095230;
-delete = 0x02095230;
 DestroyArrayRange = 0x02095244;
 __cxa_vec_new = 0x020952A0;
 __cxa_vec_dtor = 0x02095350;
@@ -745,6 +756,36 @@ __SkipUnwindInfo = 0x02095570;
 __TransferControl = 0x02095598;
 __throw = 0x020955C8;
 __exception_table_Start = 0x02095680;
+
+
+/* _Z6mallocj	= 0x0206a9fc; */
+/* _Z6mallocm	= 0x0206a9fc; */
+/* _Znwj		= 0x0206a9fc; */
+/* _Znwm		= 0x0206a9fc; */
+/* _Znaj		= 0x0206a9fc; */
+/* _Znam		= 0x0206a9fc; */
+
+/* free			= 0x02087a00; */
+/* _Z4freePv	= 0x02087a00; */
+/* _ZdlPv		= 0x02095230; */
+/* _ZdlPvj		= 0x02095230; */
+/* _ZdlPvm		= 0x02095230; */
+/* _ZdaPv		= 0x02095230; */
+
+malloc		= 0x0200f608;
+_Z6mallocj	= 0x0200f608;
+_Z6mallocm	= 0x0200f608;
+_Znwj		= 0x020013a0;
+_Znwm		= 0x020013a0;
+_Znaj		= 0x020013a0;
+_Znam		= 0x020013a0;
+
+free		= 0x0200f728;
+_Z5freePv	= 0x0200f728;
+_ZdlPv		= 0x0200f728;
+_ZdlPvj		= 0x0200f728;
+_ZdlPvm		= 0x0200f728;
+_ZdaPv		= 0x0200f728;
 
 /* data */
 
@@ -786,6 +827,8 @@ __cxxabiv1____vmi_class_type_info__typeinfo_name = 0x020B0398;
 /* __cxxabiv1 */
 
 _ZTVN10__cxxabiv117__class_type_infoE	= 0x20b034c;	/* vtable for __cxxabiv1::__class_type_info		*/
+
+FX_SinCosTable_			= 0x020a6fb4;
 
 /* bss */
 
