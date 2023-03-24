@@ -2,8 +2,8 @@
 
 #include "nitro_if.hpp"
 
-// Defines a static string for the name of the class
-#define ZE_CLASS(type) static const char* name
+// Defines a static string for the class type name
+#define ZE_CLASS(type) static const char[] typeName
 
 // Defines functions for instance creation and destruction
 #define ZE_CLASS_INSTANCE(type)								\

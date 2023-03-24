@@ -10,50 +10,44 @@
 /* _ZxxxCyyy : constructor					*/
 /********************************************/
 
+/* arm9 */
+
+/*----------------------------------------------------------------*/
+/*---------------------------- IPad ------------------------------*/
+/*----------------------------------------------------------------*/
+
+_ZTS4IPad								= 0x020AB7A0;	/* typeinfo name for IPad */
+_ZTI4IPad								= 0x020AB798;	/* typeinfo for IPad      */
 
 
-/* temporary */
+/*----------------------------------------------------------------*/
+/*---------------------------- CPad ------------------------------*/
+/*----------------------------------------------------------------*/
 
-init_memory				= 0x0200f5dc;
+_ZTS4CPad								= 0x020AB790;	/* typeinfo name for CPad */
+_ZTI4CPad								= 0x020AB7A8;	/* typeinfo for CPad      */
+_ZTV4CPad								= 0x020AB7B4;	/* vtable for CPad        */
 
-file_init				= 0x01ff8144;
-file_open				= 0x01ff8164;
-file_close				= 0x02001590;
-file_get_size			= 0x01ff81d0;
-file_read_all			= 0x02001554;
+_ZN4CPadD0Ev							= 0x0200BAD0;	/* CPad::~CPad()            */
+_ZN4CPadD1Ev							= 0x0200BACC;	/* CPad::~CPad()            */
+_ZN4CPadD2Ev							= 0x0200BACC;	/* CPad::~CPad()            */
+_ZN4CPad4initEv							= 0x0200B79C;	/* CPad::init()             */
+_ZN4CPad9storeKeysEv					= 0x0200BA6C;	/* CPad::storeKeys()        */
+_ZN4CPad9clearKeysEv					= 0x0200BA4C;	/* CPad::clearKeys()        */
+_ZN4CPad8readKeysEv						= 0x0200B890;	/* CPad::readKeys()         */
+_ZN4CPad16stopRepeatedKeysEv			= 0x0200B858;	/* CPad::stopRepeatedKeys() */
+
+_ZN4CPad8typeNameE						= 0x02096BF4;	/* CPad::typeName */
+_ZN4CPad8dpadKeysE						= 0x02096BEA;	/* CPad::dpadKeys */
+_ZN4CPad7blrKeysE						= 0x02096BE4;	/* CPad::blrKeys  */
+
+_ZN4Core14createInstanceI4CPadEEPT_v	= 0x0200B760;	/* Core::createInstance<CPad>()        */
+_ZN4Core15destroyInstanceI4CPadEEvRPT_	= 0x0200FFA0;	/* Core::destroyInstance<CPad>(CPad*&) */
 
 
-
-/* IPad */
-
-_ZTS4IPad								= 0x20ab798;	/* typeinfo name for IPad						*/
-_ZTI4IPad								= 0x20ab7a0;	/* typeinfo for IPad							*/
-
-_Z10DeleteIPadPP4IPad					= 0x200ffa0;	/* DeleteIPad(IPad**)							*/
-
-/* CPad */
-
-_ZTS4CPad								= 0x20ab790;	/* typeinfo name for CPad						*/
-_ZTI4CPad								= 0x20ab7a8;	/* typeinfo for CPad							*/
-_ZTV4CPad								= 0x20ab7bc;	/* vtable for CPad								*/
-
-_ZN4CPadD1Ev							= 0x200bacc;	/* CPad::~CPad()								*/
-_ZN4CPadD0Ev							= 0x200bad0;	/* CPad::~CPad()								*/
-_ZN4CPad4InitEv							= 0x200b79c;	/* CPad::Init()									*/
-_ZN4CPad9StoreKeysEv					= 0x200ba6c;	/* CPad::StoreKeys()							*/
-_ZN4CPad9ClearKeysEv					= 0x200ba4c;	/* CPad::ClearKeys()							*/
-_ZN4CPad8ReadKeysEv						= 0x200b890;	/* CPad::ReadKeys()								*/
-_ZN4CPad16StopRepeatedKeysEv			= 0x200b858;	/* CPad::StopRepeatedKeys()						*/
-
-CPad_Typename							= 0x2096bf4;	/* CPad_Typename (const char*)					*/
-CPad_DirectionalKeys					= 0x2096bea;	/* CPad_DirectionalKeys (u16[4])				*/
-CPad_BLRKeys							= 0x2096be4;	/* CPad_BLRKeys (u16[3])						*/
-
-_ZN4CPad11NewInstanceEv					= 0x200b760;	/* CPad::NewInstance()							*/
-
-/********************************************/
-/*                unsorted					*/
-/********************************************/
+/*----------------------------------------------------------------*/
+/*-------------------------- unsorted ----------------------------*/
+/*----------------------------------------------------------------*/
 
 /* ARM9 Section 1 (ITCM)					*/
 
@@ -789,6 +783,7 @@ _ZdaPv		= 0x0200f728;
 
 /* data */
 
+FX_SinCosTable_ = 0x020a6fb4;
 sIsDispOn = 0x020AFD0C;
 GXi_DmaId = 0x020AFD10;
 DGTi_Hash2ProcessMessageBlockFunc = 0x020AFD3C;
@@ -812,23 +807,23 @@ _376 = 0x020AFFBC;
 _380 = 0x020AFFCC;
 _381 = 0x020B0024;
 char_coll_tableC = 0x020B00AC;
+
+/* TODO: Mangle these */
+
 std__thandler = 0x020B02E0;
 std__uhandler = 0x020B02E4;
+
+/* __cxxabiv1 */
+
 std__type_info__typeinfo = 0x020B02E8;
 __cxxabiv1____si_class_type_info__typeinfo = 0x020B02F0;
 __cxxabiv1____vmi_class_type_info__typeinfo = 0x020B02FC;
 __cxxabiv1____class_type_info__typeinfo = 0x020B0308;
 __cxxabiv1____si_class_type_info__vtable = 0x020B033C;
-
+_ZTVN10__cxxabiv117__class_type_infoE = 0x20b034c;	/* vtable for __cxxabiv1::__class_type_info */
 __cxxabiv1____class_type_info__typeinfo_name = 0x020B0354;
 __cxxabiv1____si_class_type_info__typeinfo_name = 0x020B0374;
 __cxxabiv1____vmi_class_type_info__typeinfo_name = 0x020B0398;
-
-/* __cxxabiv1 */
-
-_ZTVN10__cxxabiv117__class_type_infoE	= 0x20b034c;	/* vtable for __cxxabiv1::__class_type_info		*/
-
-FX_SinCosTable_			= 0x020a6fb4;
 
 /* bss */
 
