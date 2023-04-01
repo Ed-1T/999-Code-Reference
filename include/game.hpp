@@ -16,3 +16,5 @@
 #include "Game/ITextRes.hpp"
 #include "Game/CBase.hpp"
 
+#include "Game/Pad/IPad.hpp"
+#include "Game/Pad/CPad.hpp"
