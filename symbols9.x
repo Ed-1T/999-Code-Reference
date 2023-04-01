@@ -68,6 +68,63 @@ _ZN4Core15destroyInstanceI4CPadEEvRPT_	= 0x0200FFA0;	/* Core::destroyInstance<CP
 
 
 /*----------------------------------------------------------------*/
+/*---------------------------- CBase -----------------------------*/
+/*----------------------------------------------------------------*/
+
+_ZTS5CBase	= 0x020AB4D4;	/* typeinfo name for CBase */
+_ZTI5CBase	= 0x020AB4DC;	/* typeinfo for CBase      */
+
+
+/*----------------------------------------------------------------*/
+/*------------------------- ITotalItem ---------------------------*/
+/*----------------------------------------------------------------*/
+
+_ZTS10ITotalItem	= 0x020ACC58;	/* typeinfo name for ITotalItem */
+_ZTI10ITotalItem	= 0x020ACC64;	/* typeinfo for ITotalItem      */
+_ZTV10ITotalItem	= 0x020ACD00;	/* vtable for ITotalItem        */
+
+_ZN10ITotalItemD0Ev	= 0x02041414;	/* ITotalItem::~ITotalItem() */
+_ZN10ITotalItemD1Ev	= 0x020103E0;	/* ITotalItem::~ITotalItem() */
+
+
+/*----------------------------------------------------------------*/
+/*------------------------- CTotalItem ---------------------------*/
+/*----------------------------------------------------------------*/
+
+_ZTS10CTotalItem								= 0x020ACC4C;	/* typeinfo name for CTotalItem */
+_ZTI10CTotalItem								= 0x020ACCA4;	/* typeinfo for CTotalItem      */
+_ZTV10CTotalItem								= 0x020ACD58;	/* vtable for CTotalItem        */
+
+_ZN10CTotalItem11writeToSaveEv					= 0x02040924;	/* CTotalItem::writeToSave()   */
+_ZN10CTotalItem12readFromSaveEv					= 0x02040904;	/* CTotalItem::readFromSave()  */
+_ZN10CTotalItem13scriptChangedEv				= 0x020412EC;	/* CTotalItem::scriptChanged() */
+
+_ZN10CTotalItemD0Ev								= 0x020414AC;	/* CTotalItem::~CTotalItem()                      */
+_ZN10CTotalItemD1Ev								= 0x02041428;	/* CTotalItem::~CTotalItem()                      */
+_ZN10CTotalItemD2Ev								= 0x02041428;	/* CTotalItem::~CTotalItem()                      */
+_ZN10CTotalItem4initEv							= 0x020413BC;	/* CTotalItem::init()                             */
+_ZN10CTotalItem14loadCurrentSetEv				= 0x0204110C;	/* CTotalItem::loadCurrentSet()                   */
+_ZN10CTotalItem11getItemSlotE7SString			= 0x020409D4;	/* CTotalItem::getItemSlot(SString)               */
+_ZN10CTotalItem7getItemEs						= 0x020410FC;	/* CTotalItem::getItem(short)                     */
+_ZN10CTotalItem7getItemE7SString				= 0x02040B30;	/* CTotalItem::getItem(SString)                   */
+_ZN10CTotalItem11getItemDataEs					= 0x02040AA8;	/* CTotalItem::getItemData(short)                 */
+_ZN10CTotalItem11getItemDataE7SString			= 0x020410CC;	/* CTotalItem::getItemData(SString)               */
+_ZN10CTotalItem11getItemIconEsRPvS1_			= 0x0204101C;	/* CTotalItem::getItemIcon(short, void*&, void*&) */
+_ZN10CTotalItem12hasFoundItemE9SStringID		= 0x02040D58;	/* CTotalItem::hasFoundItem(SStringID)            */
+_ZN10CTotalItem11isItemOwnedE7SString			= 0x02040EE8;	/* CTotalItem::isItemOwned(SString)               */
+_ZN10CTotalItem10isItemHeldE7SString			= 0x02040980;	/* CTotalItem::isItemHeld(SString)                */
+_ZN10CTotalItem11isItemLooseE9SStringID			= 0x02040944;	/* CTotalItem::isItemLoose(SStringID)             */
+_ZN10CTotalItem10assignItemE7SString			= 0x02040DFC;	/* CTotalItem::assignItem(SString)                */
+_ZN10CTotalItem11collectItemE9SStringID			= 0x02040B64;	/* CTotalItem::collectItem(SStringID)             */
+_ZN10CTotalItem10removeItemE9SStringID			= 0x02040AB4;	/* CTotalItem::removeItem(SStringID)              */
+
+_ZN10CTotalItem8typeNameE						= 0x02099464;	/* CTotalItem::typeName */
+
+_ZN4Core14createInstanceI10CTotalItemEEPT_v		= 0x0204049C;	/* Core::createInstance<CTotalItem>()              */
+_ZN4Core15destroyInstanceI10CTotalItemEEvRPT_	= 0x020103AC;	/* Core::destroyInstance<CTotalItem>(CTotalItem*&) */
+
+
+/*----------------------------------------------------------------*/
 /*-------------------------- unsorted ----------------------------*/
 /*----------------------------------------------------------------*/
 
