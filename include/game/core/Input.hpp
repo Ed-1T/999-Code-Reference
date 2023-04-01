@@ -68,7 +68,9 @@ namespace Core {
 
 
 	void initTouchPad();
+
 	void readKeys(u16& keys);
+
 	void readTouchPad(TouchPadData& tp);
 
 }
