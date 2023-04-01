@@ -13,5 +13,6 @@
 
 #include "Game/Core/Input.hpp"
 
+#include "Game/ITextRes.hpp"
 #include "Game/CBase.hpp"
 
