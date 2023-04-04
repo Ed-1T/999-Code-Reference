@@ -19,6 +19,10 @@
 #include "Game/Pad/IPad.hpp"
 #include "Game/Pad/CPad.hpp"
 
+#include "Game/CarryItem/CarryItemData.hpp"
+#include "Game/CarryItem/ICarryItem.hpp"
+#include "Game/CarryItem/CCarryItem.hpp"
+
 #include "Game/TotalItem/TotalItemData.hpp"
 #include "Game/TotalItem/ITotalItem.hpp"
 #include "Game/TotalItem/CTotalItem.hpp"

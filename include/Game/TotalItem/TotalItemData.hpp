@@ -34,3 +34,4 @@ struct TotalItemData {
 	s16 unk28A;				// Set to -1 in the constructor, read in getItemIcon, never changed to anything meaningful
 
 };
+NTR_SIZE_GUARD(TotalItemData, 0x28C);

@@ -9,6 +9,6 @@ public:
 
 	virtual void readFromSave() = 0;
 
-	virtual void scriptChanged() = 0;
+	virtual void scriptChanged();
 
 };
